@@ -9,7 +9,7 @@
     <artifactId>text-style</artifactId>
     <version>1.0</version>
 
-    <!-- Packaging type -->
+    <!-- Packaging type Complite-->
     <packaging>jar</packaging>
 
     <!-- Project metadata -->
