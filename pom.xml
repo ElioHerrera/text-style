@@ -41,6 +41,20 @@
         </developer>
     </developers>
 
+    <repositories>
+        <repository>
+            <id>github-repo</id>
+            <name>GitHub elioherrera Text Style Repository</name>
+            <url>https://maven.pkg.github.com/ElioHerrera/text-style</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
     <!-- Dependencies -->
     <dependencies>
         <!-- null -->
@@ -71,7 +85,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-
                 <configuration>
                     <archive>
                         <manifest>
@@ -81,6 +94,7 @@
                     </archive>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
