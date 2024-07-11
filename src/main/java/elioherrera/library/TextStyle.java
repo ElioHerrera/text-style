@@ -22,14 +22,36 @@ public class TextStyle {
     }
 
     public enum Color {
-        BLACK("0"), // NEGRO
-        RED("1"), // ROJO
-        GREEN("2"), // VERDE
-        YELLOW("3"), // AMARILLO
-        BLUE("4"), // BLUE
-        MAGENTA("5"), // MAGENTA
-        CYAN("6"), // CIAN
-        WHITE("7"); // BLANCO
+        BLACK("0"), NEGRO("0"),
+        RED("1"), ROJO("1"),
+        GREEN("2"), VERDE("2"),
+        YELLOW("3"), AMARILLO("3"),
+        BLUE("4"), AZUL("4"),
+        MAGENTA("5"),
+        CYAN("6"), CIAN("6"),
+        WHITE("7"), BLANCO("7"),
+        GREY("8"), GRIS("8"),
+
+        HIGH_RED("9"), ROJO_INTENSO("9"),
+        HIGH_GREEN("10"), VERDE_INTENSO("10"),
+        HIGH_YELLOW("11"), AMARILLO_INTENSO("11"),
+        HIGH_BLUE("12"), AZUL_INTENSO("12"),
+        HIGH_MAGENTA("13"), MAGENTA_INTENSO("13"),
+        HIGH_CYAN("14"), CIAN_INTENSO("14"),
+        HIGH_WHITE("15"), BLANCO_INTENSO("15"),
+
+
+
+
+
+         
+        ORANGE("208"), NARANJA("208"),
+        PINK("218"), ROSA("218"),
+        PURPLE("129"), PURPURA("129"),
+        BROWN("94"), MARRON("94"),
+        VIOLET("93"), VIOLETA("93"),
+        INDIGO("75"),
+        GOLD("220"), DORADO("220");
 
         private final String code;
 
@@ -44,10 +66,18 @@ public class TextStyle {
     }
 
     public enum Style {
-        NORMAL("0"), // NORMAL
-        BOLD("1"), // NEGRITA
-        ITALIC("3"), // CURSIVA
-        UNDERLINED("4"); // SUBRAYADO
+        NORMAL("0"),
+        BOLD("1"), NEGRITA("1"),
+        ITALIC("3"), CURSIVA("3"),
+        UNDERLINED("4"), SUBRAYADO("4"),
+
+        BLINK("5"), PARPADEO("5"),
+        REVERSE("7"), INVERTIDO("7"),
+        HIDDEN("8"), OCULTO("8"),
+
+        STRIKETHROUGH("9"), TACHADO("9"),
+        DOUBLE_UNDERLINED("21"), SUBRAYADO_DOBLE("21");
+
 
         private final String code;
 
@@ -63,9 +93,9 @@ public class TextStyle {
 
     public enum Effect {
         NORMAL("3"), //NORMAL
-        BRIGHT("9"), //BRILLANTE
-        BACKGROUND("4"), //FONDO
-        BRIGHT_BACKGROUND("10"); //FONDO BRILLANTE
+        BRIGHT("9"), BRILLANTE("9"),
+        BACKGROUND("4"), FONDO("4"),
+        BRIGHT_BACKGROUND("10"), FONDO_BRILLANTE("10");
 
         private final String code;
 
